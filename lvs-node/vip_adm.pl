@@ -2,7 +2,9 @@
 use 5.010;
 use strict;
 use warnings;
-require("common.pl");
+my $lib_path=`echo $0 | sed "s/\$(basename $0)//g"`;
+chomp($lib_path);
+require("$lib_path/common.pl");
 #This script is used to add/del/list vip on the dev interface loopback
 my $ip_cmd="/sbin/ip";
 my $dev="dev lo";

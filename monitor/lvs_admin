@@ -1,0 +1,143 @@
+#!/usr/bin/perl
+use 5.010;
+use strict;
+use warnings;
+my $lib_path=`echo $0 | sed "s/\$(basename $0)//g"`;
+chomp($lib_path);
+require("$lib_path/common.pl");
+
+#cmd vars
+my $CAT="/bin/cat";
+my $SSH="/usr/bin/ssh";
+my $TOUCH="/bin/touch";
+my $RM="/bin/rm";
+my $MKDIR="/bin/mkdir -p";
+my $SCP="/usr/bin/scp";
+my $PWD="/bin/pwd";
+my $NSLOOKUP="/usr/bin/nslookup";
+
+#remote file vars
+my $remote_keepalived_config="/usr/local/etc/keepalived/keepalived.conf";
+my $remote_cmd_dir="/home/lvsmonitor/lvs-node/";
+my $remote_vip_admin=$remote_cmd_dir."vip_admin.pl";
+my $remote_get_rs=$remote_cmd_dir."get_rs.pl";
+my $remote_get_allvs=$remote_cmd_dir."get_allvs.pl";
+my $remote_reloade_keepalived=$remote_cmd_dir."reload_keepalived.pl";
+
+#global vars
+my $lvs_name;
+my $local_config_modified=0;
+
+#local temp config file vars
+my $local_config;
+
+
+my %err_info=(
+	211=>"cat file failed",
+	212=>"lvs ip resolv error",
+	213=>"touch log file failed",
+	214=>"get time error",
+	);
+
+my %action=(
+	"add_vs"=>\&add_vs,		
+	"add_rs"=>\&add_rs,		
+	"del_vs"=>\&del_vs,		
+	"del_rs"=>\&del_rs,		
+	"add_vip"=>\&add_vip,		
+	"del_vip"=>\&del_vip,		
+	"get_vs"=>\&get_vs, 		
+	"get_rs"=>\&get_rs,		
+	"backup"=>\&backup,		
+	"download_conf"=>\&download_conf,
+	"upload_conf"=>\&upload_conf
+	);
+
+
+sub get_vs(){
+	my $func="$SSH $lvs_name sudo $remote_get_allvs";
+	say $func;
+	my @ret=`$SSH $lvs_name sudo $remote_get_allvs`;
+	say @ret;
+}
+
+
+
+
+
+sub exec_action(@){
+	
+}
+
+
+sub get_time{
+	my $ret=`/bin/date +%Y-%m-%d-%H:%M:%S-`;
+	if($! ne 0){err_exit(err_info{214},214)}
+	return $ret;
+}
+
+sub load_local_config($){
+	my @ret=`$CAT $_[0]`;
+	if($! ne 0){
+		err_exit(err_info{211},211);
+	}
+	else{
+		return @ret;
+	}
+}
+
+sub add_vs($$$){
+
+}
+
+
+sub del_vs($$$){
+
+}
+
+sub check_lvs_ip($){
+	#this function will resolve the ip of 
+	#the lvs server
+	my @ret=`$NSLOOKUP $_[0]`;
+	for(@ret){
+		if($_=~/answer/){return 1}
+	}
+	return 0;
+}
+
+
+sub init_env{
+	#init nessory env args
+	my $ret=`$PWD`;
+	my @ret=split /\//,$ret;
+	$lvs_name=$ret[$#ret];
+	say $lvs_name;
+	if(!is_ip($lvs_name)){
+		err_exit($err_info{212},212);
+	}
+	#if(!check_lvs_ip($lvs_name)){
+	#	err_exit(err_info{212},212);
+	#}
+	
+	if( !-f 'log'){
+		`$TOUCH log`;
+		if($! ne 0){err_exit($err_info{213},213)}
+	}
+
+}
+
+
+
+
+#main
+if($#ARGV < 0 or $ARGV[0] eq "help"){usage($0)}
+init_env();
+#exec_action(@ARGV);
+get_vs();
+
+
+
+
+
+
+

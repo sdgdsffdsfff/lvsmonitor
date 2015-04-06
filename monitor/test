@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+use 5.010;
+use strict;
+use warnings;
+my $lib_path=`echo $0 | sed "s/\$(basename $0)//g"`;
+chomp($lib_path);
+require("$lib_path/common.pl");
+
+
+
+usage($0);

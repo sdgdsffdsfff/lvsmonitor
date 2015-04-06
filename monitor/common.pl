@@ -8,7 +8,7 @@ sub err_exit($$){
 }
 
 sub is_ip($){
-	if($_[0]=~/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}/){
+	if($_[0]=~/^([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})$/){
 		return 1;
 	}else{
 		return 0;
@@ -34,18 +34,19 @@ sub check_rs($$){
 }
 
 
-sub backup_config($$){
-	#backup the keepalived config file on  
-	#on the remote lvs node
+
+
+
+
+
+
+sub get_time{
+	my $ret=`/bin/date +%Y-%m-%d-%H:%M:%S-`;
+	#if(!$ret){err_exit("get_time err",0)}
+	chomp($ret);
+	return $ret;
 }
 
-sub write_log($){
-    #write a log for every operator command
-}
-
-sub upload_config_file($$){
-	#upload the config file
-}
 
 
 
@@ -56,21 +57,24 @@ Info:you should run this command int the dir named a hostname or ip of the remot
   	 ip from the directory.
 Usage:
 	$_[0]  [command] [options]
-	add_vs			[vip=vip] [vport=vport] [pro=protcol]
-	add_rs			[vip=vip] [vport=vport] [rip=rip] [rport=rport] [pro=protcol]
-	del_vs			[vip=vip] [vport=vport] [pro=protcol]
-	del_rs			[vip=vip] [vport=vport] [rip=rip] [rport=rport] [pro=protcol]
+	add_vs				[vip=vip] [vport=vport] [pro=protcol]
+	add_rs				[vip=vip] [vport=vport] [rip=rip] [rport=rport] [pro=protcol]
+	del_vs				[vip=vip] [vport=vport] [pro=protcol]
+	del_rs				[vip=vip] [vport=vport] [rip=rip] [rport=rport] [pro=protcol]
 	
-	add_vip			[vip=vip]   add a ip on the lvs lo and write into rc.local
-	del_vip			[vip=vip]   del a ip on the lvs lo and clear it from rc.local
-	get_vs 			get all the virtual service from the remote lvs mode
-	get_rs			[rip=rip] get the rip infromation from the remote lvs node
+	add_vip				[vip=vip]   add a ip on the lvs lo and write into rc.local
+	del_vip				[vip=vip]   del a ip on the lvs lo and clear it from rc.local
+	get_vs 				[vip=vip] [vport=vport] get all the virtual service from the remote lvs mode
+	get_rs				[rip=rip] get the rip infromation from the remote lvs node
 
-	backup			backup keepalived file on the remote lvs
-	download_conf	download keepalived file from the remote lvs
-	upload_conf		upload the keepalived file that we changed to the remote lvs
+	backup				backup keepalived file on the remote lvs
+	download_conf		download keepalived file from the remote lvs
+	upload_conf			upload the keepalived file that we changed to the remote lvs
+	reload_keepalived	[vrrp][check] default(without arg) is to reload all the three pids
 
 EOF
+
+exit 0;
 }
 
 

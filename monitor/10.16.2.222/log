@@ -1,0 +1,207 @@
+2015-04-06-18:14:12-
+cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 10.16.2.224 23
+2015-04-06-18:14:12-
+result:no match
+2015-04-06-18:14:39-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 10.16.2.224 23
+2015-04-06-18:14:39-result:no match
+2015-04-06-18:15:39-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 10.16.2.224 23
+2015-04-06-18:15:39-result:no match
+2015-04-06-18:15:52-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 10.16.2.224
+2015-04-06-18:15:52-result:success
+2015-04-06-18:20:04-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 
+2015-04-06-18:20:04-result:success
+2015-04-06-18:21:46-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 1 2 3
+2015-04-06-18:21:46-result:get_vs failed
+2015-04-06-18:25:48-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 1 2 3
+2015-04-06-18:25:48-result:get_vs failed
+2015-04-06-18:32:33-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 1 2 3
+2015-04-06-18:32:33-result:get_vs failed
+2015-04-06-18:33:15-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 1 2 3
+2015-04-06-18:33:15-result:get_vs failed
+2015-04-06-18:34:02-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 1 2 3
+2015-04-06-18:34:02-result:get_vs failed
+2015-04-06-18:34:50-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 1
+2015-04-06-18:34:50-result:get_vs failed
+2015-04-06-18:34:55-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 
+2015-04-06-18:34:55-result:success
+2015-04-06-18:35:52-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 
+2015-04-06-18:35:52-result:success
+2015-04-06-18:35:57-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 10.16.2.224
+2015-04-06-18:35:57-result:success
+2015-04-06-18:36:01-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 10.16.2.2241
+2015-04-06-18:36:01-result:get_vs failed
+2015-04-06-18:36:26-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 10.16.2.224
+2015-04-06-18:36:26-result:success
+2015-04-06-18:37:38-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 10.16.2.224
+2015-04-06-18:37:38-result:success
+2015-04-06-18:37:42-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 10.16.2.224 80
+2015-04-06-18:37:42-result:success
+2015-04-06-18:37:44-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 10.16.2.224 22
+2015-04-06-18:37:44-result:success
+2015-04-06-18:43:52-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_rs.pl 172.8.1.221
+2015-04-06-18:43:52-result:no match
+2015-04-06-18:43:56-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_rs.pl 172.18.1.221
+2015-04-06-18:43:56-result:success
+2015-04-06-18:44:00-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_rs.pl 172.18.1.223
+2015-04-06-18:44:00-result:success
+2015-04-06-18:44:02-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_rs.pl 172.18.1.222
+2015-04-06-18:44:02-result:no match
+2015-04-06-18:44:59-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_rs.pl 172.18.1.222
+2015-04-06-18:44:59-result:no match
+2015-04-06-18:45:02-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_rs.pl 172.18.1.223
+2015-04-06-18:45:02-result:success
+2015-04-06-18:48:10-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_rs.pl 172.18.1.223
+2015-04-06-18:48:10-result:success
+2015-04-06-19:02:52-cmd:/usr/bin/ssh 10.16.2.222 sudo remote_reloade_keepalived 
+2015-04-06-19:02:52-result:get_vs failed
+2015-04-06-19:03:47-cmd:/usr/bin/ssh 10.16.2.222 sudo remote_reloade_keepalived 
+2015-04-06-19:03:47-result:reload_keepalived failed
+2015-04-06-19:04:39-cmd:/usr/bin/ssh 10.16.2.222 sudo remote_reloade_keepalived 
+2015-04-06-19:04:39-result:reload_keepalived failed
+2015-04-06-19:05:05-cmd:/usr/bin/ssh 10.16.2.222 sudo remote_reloade_keepalived 
+2015-04-06-19:05:05-result:reload_keepalived failed
+2015-04-06-19:05:31-cmd:/usr/bin/ssh 10.16.2.222 sudo remote_reloade_keepalived 
+2015-04-06-19:05:31-result:reload_keepalived failed
+2015-04-06-19:06:18-cmd:/usr/bin/ssh 10.16.2.222 sudo remote_reloade_keepalived 
+2015-04-06-19:06:18-result:reload_keepalived failed
+2015-04-06-19:08:48-cmd:/usr/bin/ssh 10.16.2.222 sudo remote_reloade_keepalived 
+2015-04-06-19:08:48-result:reload_keepalived failed
+2015-04-06-19:11:49-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 
+2015-04-06-19:11:49-result:success
+2015-04-06-19:12:33-cmd:/usr/bin/ssh 10.16.2.222 sudo remote_reloade_keepalived 
+2015-04-06-19:12:33-result:reload_keepalived failed
+2015-04-06-19:13:34-cmd:/usr/bin/ssh 10.16.2.222 sudo remote_reloade_keepalived 
+2015-04-06-19:13:34-result:success
+2015-04-06-19:14:08-cmd:/usr/bin/ssh 10.16.2.222 sudo remote_reloade_keepalived 
+2015-04-06-19:14:08-result:success
+2015-04-06-19:14:16-cmd:/usr/bin/ssh 10.16.2.222 sudo remote_reloade_keepalived vrrp
+2015-04-06-19:14:16-result:success
+2015-04-06-19:14:20-cmd:/usr/bin/ssh 10.16.2.222 sudo remote_reloade_keepalived check
+2015-04-06-19:14:20-result:success
+2015-04-06-19:27:40-cmd:/usr/bin/ssh 10.16.2.222 sudo remote_reloade_keepalived check
+2015-04-06-19:27:40-result:success
+2015-04-06-19:27:52-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 
+2015-04-06-19:27:52-result:success
+2015-04-06-19:27:59-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 10.16.2.224
+2015-04-06-19:27:59-result:success
+2015-04-06-19:28:01-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 10.16.2.224 22
+2015-04-06-19:28:01-result:success
+2015-04-06-19:28:14-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_rs.pl 172.18.1.221
+2015-04-06-19:28:14-result:success
+2015-04-06-20:35:17-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/vip_admin.pl add 
+2015-04-06-20:35:17-
+2015-04-06-20:35:49-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/vip_admin.pl add 100.100.100.100
+2015-04-06-20:35:49-
+2015-04-06-20:36:12-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/vip_admin.pl add 100.100.100.100
+2015-04-06-20:36:12-
+2015-04-06-20:36:39-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/vip_admin.pl add 100.100.100.100
+2015-04-06-20:36:39-add 100.100.100.100 on lo success
+
+2015-04-06-20:36:42-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/vip_admin.pl add 100.100.100.100
+2015-04-06-20:36:42-vip already confinged on the lo,add failed!
+
+2015-04-06-20:37:13-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/vip_admin.pl add 100.100.100.100
+2015-04-06-20:37:13-result:vip already confinged on the lo,add failed!
+
+2015-04-06-20:38:15-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/vip_admin.pl del 100.100.100.100
+2015-04-06-20:38:15-result:del 100.100.100.100 on lo success
+
+2015-04-06-20:38:25-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/vip_admin.pl del 100.100.100.100
+2015-04-06-20:38:25-result:vip not confinged on the lo,del failed!
+
+2015-04-06-20:39:38-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/vip_admin.pl del 100.100.100.100
+2015-04-06-20:39:38-result:vip not confinged on the lo,del failed!
+
+2015-04-06-20:39:44-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/vip_admin.pl add 100.100.100.100
+2015-04-06-20:39:44-result:add 100.100.100.100 on lo success
+
+2015-04-06-20:44:32-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 
+2015-04-06-20:44:32-result:success
+
+2015-04-06-20:44:37-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 10.16.2.224
+2015-04-06-20:44:37-result:success
+
+2015-04-06-20:52:30-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 
+2015-04-06-20:52:30-result:success
+
+2015-04-06-20:52:37-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 1.1.1.1
+2015-04-06-20:52:37-result:no match
+
+2015-04-06-20:52:44-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 
+2015-04-06-20:52:44-result:success
+
+2015-04-06-20:52:51-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 10.16.2.224
+2015-04-06-20:52:51-result:success
+
+2015-04-06-20:52:53-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 10.16.2.224 22
+2015-04-06-20:52:53-result:success
+
+2015-04-06-20:53:01-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 10.16.2.224 22
+2015-04-06-20:53:01-result:success
+
+2015-04-06-20:53:05-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 10.16.2.224 22 1
+2015-04-06-20:53:05-result:get_vs failed
+
+2015-04-06-20:54:20-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 10.16.2.224 22
+2015-04-06-20:54:20-result:success
+
+2015-04-06-20:54:26-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 10.16.2.224 80
+2015-04-06-20:54:26-result:success
+
+2015-04-06-21:12:50-/usr/bin/scp 10.16.2.222:/usr/local/etc/keepalived/keepalived.conf keepalived.conf
+2015-04-06-21:12:50-download keepalived config file failed
+2015-04-06-21:14:01-/usr/bin/scp 10.16.2.222:/usr/local/etc/keepalived/keepalived.conf keepalived.conf
+2015-04-06-21:14:01-download keepalived config file success
+2015-04-06-21:24:41-/usr/bin/scp 10.16.2.222:/usr/local/etc/keepalived/keepalived.conf keepalived.conf
+2015-04-06-21:25:57-/usr/bin/scp 10.16.2.222:/usr/local/etc/keepalived/keepalived.conf keepalived.conf
+2015-04-06-21:26:45-/usr/bin/scp 10.16.2.222:/usr/local/etc/keepalived/keepalived.conf keepalived.conf
+2015-04-06-21:26:45-download keepalived config file success
+2015-04-06-21:27:13-/usr/bin/scp 10.16.2.222:/usr/local/etc/keepalived/keepalived.conf keepalived.conf
+2015-04-06-21:27:13-download keepalived config file success
+2015-04-06-21:27:34-/usr/bin/scp 10.16.2.222:/usr/local/etc/keepalived/keepalived.conf keepalived.conf
+2015-04-06-21:27:34-download keepalived config file success
+2015-04-06-21:28:06-/usr/bin/scp 10.16.2.222:/usr/local/etc/keepalived/keepalived.conf keepalived.conf
+2015-04-06-21:28:06-download keepalived config file success
+2015-04-06-21:49:35-upload_conf failed
+2015-04-06-21:50:42-upload_conf success
+2015-04-06-21:54:17-upload_conf success
+2015-04-06-21:54:58-upload_conf success
+2015-04-06-21:55:06-upload_conf success
+2015-04-06-21:56:44-upload_conf success
+2015-04-06-21:59:28-/usr/bin/scp 10.16.2.222:/usr/local/etc/keepalived/keepalived.conf keepalived.conf
+2015-04-06-21:59:28-download keepalived config file success
+2015-04-06-21:59:39-upload_conf success
+2015-04-06-22:01:48-/usr/bin/scp 10.16.2.222:/usr/local/etc/keepalived/keepalived.conf keepalived.conf
+2015-04-06-22:01:48-download keepalived config file success
+2015-04-06-22:05:08-upload_conf success
+2015-04-06-22:12:37-upload_conf success
+2015-04-06-22:12:52-/usr/bin/scp 10.16.2.222:/usr/local/etc/keepalived/keepalived.conf keepalived.conf
+2015-04-06-22:12:52-download keepalived config file success
+2015-04-06-22:18:09-/usr/bin/scp 10.16.2.222:/usr/local/etc/keepalived/keepalived.conf keepalived.conf
+2015-04-06-22:18:23-/usr/bin/scp 10.16.2.222:/usr/local/etc/keepalived/keepalived.conf keepalived.conf
+2015-04-06-22:18:23-download keepalived config file success
+2015-04-06-22:18:36-upload_conf success
+2015-04-06-22:19:25-upload_conf success
+2015-04-06-22:19:37-/usr/bin/scp 10.16.2.222:/usr/local/etc/keepalived/keepalived.conf keepalived.conf
+2015-04-06-22:19:37-download keepalived config file success
+2015-04-06-22:20:35-/usr/bin/scp 10.16.2.222:/usr/local/etc/keepalived/keepalived.conf keepalived.conf
+2015-04-06-22:20:35-download keepalived config file success
+2015-04-06-22:20:44-upload_conf success
+2015-04-06-22:21:03-/usr/bin/scp 10.16.2.222:/usr/local/etc/keepalived/keepalived.conf keepalived.conf
+2015-04-06-22:21:03-download keepalived config file success
+2015-04-06-22:21:24-upload_conf success
+2015-04-06-22:22:33-/usr/bin/scp 10.16.2.222:/usr/local/etc/keepalived/keepalived.conf keepalived.conf
+2015-04-06-22:22:33-download keepalived config file success
+2015-04-06-22:22:41-upload_conf success
+2015-04-06-22:23:59-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 
+2015-04-06-22:23:59-result:success
+
+2015-04-06-22:24:05-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_allvs.pl 10.16.2.224
+2015-04-06-22:24:05-result:success
+
+2015-04-06-22:24:10-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_rs.pl 10.16.2.224
+2015-04-06-22:24:10-result:no match
+
+2015-04-06-22:24:22-cmd:/usr/bin/ssh 10.16.2.222 sudo /home/lvsmonitor/lvs-node/get_rs.pl 172.18.1.221
+2015-04-06-22:24:22-result:success
+

@@ -23,17 +23,14 @@ sub is_port($){
 	}
 }
 
-sub check_vs($$){
-
+sub is_pro($){
+	for(@PROTOCOL){
+		if($_ eq $_[0]){
+			return 1;
+		}
+	}
+	return 0;
 }
-
-
-
-sub check_rs($$){
-
-}
-
-
 
 
 
@@ -68,9 +65,9 @@ Usage:
 	get_rs				[rip=rip] get the rip infromation from the remote lvs node
 
 	backup				backup keepalived file on the remote lvs
-	download_conf		download keepalived file from the remote lvs
-	upload_conf			upload the keepalived file that we changed to the remote lvs
-	reload_keepalived	[vrrp][check] default(without arg) is to reload all the three pids
+	download			download keepalived file from the remote lvs
+	upload      			upload the keepalived file that we changed to the remote lvs
+	reload          		[vrrp][check] default(without arg) is to reload all the three pids
 
 EOF
 

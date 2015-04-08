@@ -21,6 +21,27 @@ sub is_support_protocol($){
     }
 }
 
+
+sub write_info($@){
+    #write a list to a file
+    my $file=shift @_;
+    my @infos=@_;
+    open(F,">$file");
+    for(@infos){
+        chomp($_);
+        say F $_;
+    }
+}
+
+sub get_time{
+    my $ret=`/bin/date +%Y-%m-%d-%H:%M:%S-`;
+    #if(!$ret){err_exit("get_time err",0)}
+    chomp($ret);
+    return $ret;
+}
+
+
+
 sub err_exit($$){
     print $_[0]."\n";
     exit $_[1];   
